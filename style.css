@@ -170,7 +170,7 @@ nav .container {
   width: 100%;
 }
 
-.main .container > * {
+.main .container>* {
   margin: 2rem;
 }
 
@@ -178,6 +178,7 @@ nav .container {
   color: #fff;
   transform: translateY(-50px);
 }
+
 .imgContainer {
   transform: translateY(50px);
 }
@@ -208,6 +209,27 @@ nav .container {
   z-index: 20;
   background-image: linear-gradient(to top, #151515, transparent);
 }
+
 .opacity {
   opacity: 0;
+}
+
+@media (max-width:850px) {
+  .main .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:600px) {
+  .big-title {
+    font-size: 3rem;
+  }
+
+  .text {
+    font-size: .8rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
 }
